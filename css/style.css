@@ -20,6 +20,8 @@ body{
  height:100%;
  flex-wrap: wrap;
  overflow: hidden;
+ padding:0px;
+ 
 }
 
 img{
