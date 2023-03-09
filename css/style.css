@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+body{
+   display:flex;
+   width:100vw;
+   height:100vh;
+   max-width: 100vw;
+   max-height: 100vh;
+   font-family: 'Rakkas', cursive;
+   padding:0px;
+}
+
+.layout{
+ display:flex;
+ flex-direction: row;
+ width:80rem;
+ max-width: 1440px;
+ margin:auto;
+ height:100%;
+ flex-wrap: wrap;
+ overflow: hidden;
+}
+
+img{
+    width:100%;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    background-image: url(/assets/conan-bg.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    flex:1;
+    height:100%;
+   
+   
+    
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    flex:2;
+   
+  
+   
+}
+
+.hero{
+    padding:0.5rem;
+    background-color: black;
+}
+
+h1{
+text-align: center;
+background: -webkit-linear-gradient(#ec9203, #f50606);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 2.2rem;
+}
+
+p{
+    color:white;
+    font-size: 1.5rem;
+    padding:0.3rem;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top:2rem;
+    
+}
+
+header a{
+    display:block;
+    max-width:200px;
+    
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex:1;
+    padding:1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1.8rem;
+    padding:0.5rem;
+    margin:0.3rem;
+}
+
+input[type="text"], input[type="tel"],input[type="email"],input[type="password"],button{
+    padding:1rem;
+    font-family: 'Rakkas', cursive;
+    background: -webkit-linear-gradient(#f50606,#ec9203);
+    border:white;
+    color:white;
+    border-radius: 0.5rem;
+    
+}
+
+input:focus {
+   box-shadow: inset 0 0 0 1px black, 0 0 3px 1px  #011301;
+  }
+
+input::placeholder{
+    color:white;
+    font-size: 1rem;
+}
+
+input:invalid {
+    border-color: red;
+    background: -webkit-linear-gradient(#f50606,#011301);
+  }
+  
+  input:valid {
+    border-color:#4ef506;
+    background: -webkit-linear-gradient(#4ef506,#148812);
+  }
+
+
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+button{
+    font-size:1rem;
+}
+
+legend{
+    
+background: -webkit-linear-gradient(#f50606,#ec9203);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 1.5rem;
+}
+
+@media (min-width: 100px) and (max-width: 800px){
+
+    body{
+        margin:0px;
+        height:auto;
+    }
+    .layout{
+        flex-direction: column;
+        width:100%;
+        padding:0px;
+        margin:0px;
+       }
+
+       header{
+        height:auto;
+        max-height: 9rem;
+        padding:0px;
+       }
+
+       main{
+        height: auto;
+       }
+
+    section p{
+        padding:2rem;
+    }
+
+  
+       h1,p,legend{
+        font-size:1rem;
+        text-align: center;
+       }
+
+       form{
+        justify-content: center;
+        align-items: center;
+       }
+
+       .hero p{
+        text-align: center;
+        font-size: 0.9rem;
+       }
+
+       .input-container{
+        flex-direction: column;
+       }
+       input[type="text"], input[type="tel"],input[type="email"],input[type="password"],button{
+        padding:r0.5em;
+   
+    }
+    
+}
+
